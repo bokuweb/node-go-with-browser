@@ -9,7 +9,7 @@ RUN apt-get install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 lib
     xvfb x11-xkb-utils xfonts-100dpi xfonts-75dpi \
     xfonts-scalable xfonts-cyrillic x11-apps clang \
     libgtk2.0-dev libnotify-dev libgnome-keyring-dev libgconf2-dev \
-    libcap-dev libxtst-dev docker-ce docker-ce-cli containerd.io \
+    libcap-dev libxtst-dev \
     gcc-multilib g++-multilib python3 python3-pip fonts-migmix && apt-get clean
 
 # Install node
@@ -27,6 +27,6 @@ RUN chmod 755 /usr/local/bin/xvfbd
 
 RUN chmod 755 /usr/local/bin/xvfbd
 
-# RUN curl -L -o /tmp/docker.tgz https://get.docker.com/builds/Linux/x86_64/docker-17.03.0-ce.tgz
-# RUN tar -xz -C /tmp -f /tmp/docker.tgz
-# RUN mv /tmp/docker/* /usr/bin
+RUN curl -L -o /tmp/docker.tgz https://get.docker.com/builds/Linux/x86_64/docker-17.03.0-ce.tgz
+RUN tar -xz -C /tmp -f /tmp/docker.tgz
+RUN mv /tmp/docker/* /usr/bin
