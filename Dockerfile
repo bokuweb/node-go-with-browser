@@ -24,3 +24,9 @@ RUN npm i -g yarn
 
 COPY ./xvfbd /usr/local/bin
 RUN chmod 755 /usr/local/bin/xvfbd
+
+RUN chmod 755 /usr/local/bin/xvfbd
+
+RUN curl -L -o /tmp/docker.tgz https://get.docker.com/builds/Linux/x86_64/docker-17.03.0-ce.tgz
+RUN tar -xz -C /tmp -f /tmp/docker.tgz
+RUN mv /tmp/docker/* /usr/bin
