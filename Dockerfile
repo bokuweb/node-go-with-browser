@@ -6,7 +6,7 @@ RUN apt-get install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 lib
     libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 \
     libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 \
     ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget \
-    xvfb x11-xkb-utils xfonts-100dpi xfonts-75dpi \
+    xvfb x11-xkb-utils xfonts-100dpi xfonts-75dpi zip \
     xfonts-scalable xfonts-cyrillic x11-apps clang \
     libgtk2.0-dev libnotify-dev libgnome-keyring-dev libgconf2-dev \
     libcap-dev libxtst-dev \
