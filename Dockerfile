@@ -8,7 +8,7 @@ RUN apt-get install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 lib
     ca-certificates fonts-liberation libappindicator1 libnss3-dev lsb-release xdg-utils wget \
     xvfb x11-xkb-utils xfonts-100dpi xfonts-75dpi zip \
     xfonts-scalable xfonts-cyrillic x11-apps clang \
-    libgtk2.0-dev libnotify-dev libgnome-keyring-dev libgconf2-dev \
+    libgtk2.0-dev libnotify-dev libgnome-keyring0 libgconf2-dev \
     libcap-dev libxtst-dev \
     gcc-multilib g++-multilib python3 python3-pip fonts-migmix && apt-get clean
 
