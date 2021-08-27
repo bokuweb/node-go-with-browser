@@ -13,9 +13,9 @@ RUN apt-get install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 lib
     gcc-multilib g++-multilib python3 python3-pip fonts-migmix && apt-get clean
 
 # Install node
-RUN wget http://nodejs.org/dist/v14.13.1/node-v14.13.1.tar.gz && \
-  tar -zxvf node-v14.13.1.tar.gz && \
-  cd node-v14.13.1 && ./configure && make && \
+RUN wget http://nodejs.org/dist/v14.17.5/node-v14.17.5.tar.gz && \
+  tar -zxvf node-v14.17.5.tar.gz && \
+  cd node-v14.17.5 && ./configure && make && \
   make install
 
 RUN go version
