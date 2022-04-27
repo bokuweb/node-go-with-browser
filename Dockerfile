@@ -14,8 +14,8 @@ RUN apt-get install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 lib
 
 # Install node
 RUN wget http://nodejs.org/dist/v16.9.1/node-v16.9.1.tar.gz && \
-  tar -zxvf node-v16.9.1.tar.gz && \
-  cd node-v16.9.1 && ./configure && make && \
+  tar -zxvf node-v16.15.0.tar.gz && \
+  cd node-v16.15.0 && ./configure && make && \
   make install
 
 RUN go version
