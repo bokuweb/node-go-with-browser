@@ -1,4 +1,4 @@
-FROM golang:1.12
+FROM golang:1.13
 
 RUN apt-get update -y
 RUN apt-get install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-dev \
@@ -13,7 +13,7 @@ RUN apt-get install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 lib
     gcc-multilib g++-multilib python3 python3-pip fonts-migmix && apt-get clean
 
 # Install node
-RUN wget http://nodejs.org/dist/v16.9.1/node-v16.9.1.tar.gz && \
+RUN wget http://nodejs.org/dist/v16.15.0/node-v16.15.0.tar.gz && \
   tar -zxvf node-v16.15.0.tar.gz && \
   cd node-v16.15.0 && ./configure && make && \
   make install
